@@ -4,14 +4,9 @@
   --shadow: 0 2px 2px rgb(0 0 0 / 0.5);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   font-size: 1.2rem;
   font-family: "Poppins", sans-serif;
-  min-height: 3000px;
 }
 
 /* hero */
@@ -374,7 +369,7 @@ body {
 /* Footer */
 footer {
   padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
   background-color: var(--pink);
   color: #fff;
 }
@@ -393,6 +388,36 @@ footer li {
   list-style: none;
   display: inline;
   margin-right: 0.5rem;
+}
+
+.audio-icon-wrapper {
+  width: 3rem;
+  height: 3rem;
+  font-size: 3rem;
+  position: fixed;
+  /* top: 50%; */
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: #fff;
+  opacity: 0.5;
+  mix-blend-mode: difference;
+  animation: rotating 4s linear infinite;
+  transform-origin: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 0;
+}
+
+@keyframes rotating {
+  form {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
 /* Responsive */
 /* Extra Large */
